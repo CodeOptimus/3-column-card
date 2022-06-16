@@ -236,6 +236,54 @@ p {
   color: #fff;
 }
 
+.item1 {
+  grid-area: header;
+  background-color: turquoise;
+
+}
+
+.item2 {
+  grid-area: menu;
+  background-color: turquoise;
+
+}
+
+.item3 {
+  grid-area: main;
+  background-color: green;
+
+}
+
+.item4 {
+  grid-area: right;
+  background-color: yellow;
+
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: red;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.grid-container>div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
 /*=== RESPONSIVE =========================*/
 @media screen and (min-width: 992px) {
   /* Layout */
